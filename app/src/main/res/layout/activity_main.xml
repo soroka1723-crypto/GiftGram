@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gg_bg">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gg_bg" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="top"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressBackgroundTint="@color/gg_transparent"
+        android:progressTint="@color/gg_cyan" />
+
+    <!-- Экран отсутствия связи -->
+    <LinearLayout
+        android:id="@+id/offline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gg_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:alpha="0.9"
+            android:contentDescription="@string/offline_title"
+            android:src="@drawable/ic_offline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/offline_title"
+            android:textColor="@color/gg_text"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/offline_text"
+            android:textColor="@color/gg_muted"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/retry"
+            android:textAllCaps="false"
+            android:textColor="@color/gg_white"
+            android:textSize="15sp"
+            app:backgroundTint="@color/gg_accent"
+            app:cornerRadius="16dp" />
+    </LinearLayout>
+
+    <!-- Плавающая кнопка меню GiftGram -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="18dp"
+        android:alpha="0.6"
+        android:contentDescription="@string/menu"
+        android:src="@drawable/ic_gg_menu"
+        app:backgroundTint="@color/gg_surface"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:tint="@color/gg_text" />
+
+</FrameLayout>

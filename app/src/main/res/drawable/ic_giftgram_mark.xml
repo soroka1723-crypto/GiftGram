@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="112dp"
+    android:height="112dp"
+    android:viewportWidth="112"
+    android:viewportHeight="112">
+
+    <!-- Скруглённый тайл -->
+    <path android:pathData="M28,4 L84,4 A24,24 0 0 1 108,28 L108,84 A24,24 0 0 1 84,108 L28,108 A24,24 0 0 1 4,84 L4,28 A24,24 0 0 1 28,4 Z">
+        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+            <gradient
+                android:endX="108"
+                android:endY="108"
+                android:startX="4"
+                android:startY="4"
+                android:type="linear">
+                <item
+                    android:color="#7C5CFF"
+                    android:offset="0" />
+                <item
+                    android:color="#22D3EE"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Внутренний тёмный круг -->
+    <path
+        android:fillColor="#0A0C14"
+        android:pathData="M56,26 A30,30 0 1 1 55.99,26 Z" />
+
+    <!-- Стрелка-самолётик -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M56,38 L76,74 L58,68 L56,74 L54,68 L36,74 Z" />
+
+    <!-- Точка-акцент -->
+    <path
+        android:fillColor="#22D3EE"
+        android:pathData="M56,56 m-4,0 a4,4 0 1,1 8,0 a4,4 0 1,1 -8,0" />
+</vector>

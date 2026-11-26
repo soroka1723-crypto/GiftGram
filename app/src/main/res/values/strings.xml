@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GiftGram</string>
+    <string name="tagline">Общайся. Ищи друзей. Продавай.</string>
+    <string name="loading">Подключение…</string>
+
+    <string name="menu">Меню GiftGram</string>
+    <string name="sheet_title">GiftGram</string>
+    <string name="sheet_subtitle">Свободный мессенджер</string>
+
+    <string name="act_channel">Канал GiftGram</string>
+    <string name="act_channel_sub">Новости и обновления</string>
+    <string name="act_refresh">Обновить</string>
+    <string name="act_refresh_sub">Перезагрузить чаты</string>
+    <string name="act_share">Поделиться приложением</string>
+    <string name="act_share_sub">Отправить ссылку другу</string>
+    <string name="act_theme">Тёмная тема</string>
+    <string name="act_theme_sub">Оформление приложения</string>
+    <string name="act_clear">Очистить кэш</string>
+    <string name="act_clear_sub">Освободить память</string>
+    <string name="act_about">О приложении</string>
+    <string name="act_about_sub">Версия и информация</string>
+    <string name="act_exit">Выход</string>
+    <string name="act_exit_sub">Закрыть GiftGram</string>
+
+    <string name="offline_title">Нет подключения</string>
+    <string name="offline_text">Проверьте интернет и попробуйте снова — GiftGram снова подключится к чатам.</string>
+    <string name="retry">Повторить</string>
+
+    <string name="share_text">GiftGram — свободный мессенджер: общайся, ищи друзей, продавай и делай что хочешь. Канал: https://t.me/Giftgrammmmmm</string>
+    <string name="choose_file">Выберите файл</string>
+    <string name="no_file_app">Не найдено приложение для выбора файла</string>
+    <string name="downloading">Загрузка файла…</string>
+    <string name="download_ok">Файл сохранён в «Загрузки»</string>
+    <string name="download_fail">Не удалось сохранить файл</string>
+    <string name="cache_cleared">Кэш очищен</string>
+
+    <string name="about_title">GiftGram 1.0.0</string>
+    <string name="about_text">GiftGram — свободный мессенджер для Android: общайся, ищи друзей, продавай и делай что хочешь.\n\nКанал с информацией и обновлениями:\nhttps://t.me/Giftgrammmmmm\n\nСборка: приватная (private build), подписана собственным ключом.</string>
+    <string name="about_ok">Понятно</string>
+    <string name="about_channel">Открыть канал</string>
+</resources>

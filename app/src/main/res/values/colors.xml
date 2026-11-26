@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Базовая (светлая) палитра. Тёмные значения переопределены в values-night/colors.xml -->
+<resources>
+    <color name="gg_bg">#F4F5FA</color>
+    <color name="gg_bg2">#FFFFFF</color>
+    <color name="gg_surface">#FFFFFF</color>
+    <color name="gg_line">#E3E6F0</color>
+
+    <color name="gg_text">#0B0E18</color>
+    <color name="gg_muted">#5B6480</color>
+
+    <!-- Бренд: одинаков в обеих темах -->
+    <color name="gg_accent">#6438FF</color>
+    <color name="gg_accent_dark">#4B25D6</color>
+    <color name="gg_cyan">#0891B2</color>
+    <color name="gg_pink">#E0348D</color>
+    <color name="gg_white">#FFFFFF</color>
+    <color name="gg_green">#10B981</color>
+    <color name="gg_transparent">#00000000</color>
+
+    <!-- Сплэш всегда тёмный (бренд) -->
+    <color name="gg_splash_text">#EEF1F9</color>
+    <color name="gg_splash_muted">#8B93A9</color>
+    <color name="gg_sheet_handle">#D5D9E6</color>
+</resources>

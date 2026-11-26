@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="14dp">
+
+    <View
+        android:layout_width="38dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/bg_sheet_handle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_giftgram_mark" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sheet_title"
+                android:textColor="@color/gg_text"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sheet_subtitle"
+                android:textColor="@color/gg_muted"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gg_line" />
+
+    <LinearLayout
+        android:id="@+id/row_channel"
+        style="@style/GiftGram.SheetRow"
+        android:layout_marginTop="6dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/act_channel"
+            android:src="@drawable/ic_gg_channel" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/GiftGram.SheetRowTitle"
+                android:text="@string/act_channel" />
+
+            <TextView
+                style="@style/GiftGram.SheetRowSub"
+                android:text="@string/act_channel_sub" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_refresh"
+        style="@style/GiftGram.SheetRow">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/act_refresh"
+            android:src="@drawable/ic_gg_refresh" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/GiftGram.SheetRowTitle"
+                android:text="@string/act_refresh" />
+
+            <TextView
+                style="@style/GiftGram.SheetRowSub"
+                android:text="@string/act_refresh_sub" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_share"
+        style="@style/GiftGram.SheetRow">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/act_share"
+            android:src="@drawable/ic_gg_share" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/GiftGram.SheetRowTitle"
+                android:text="@string/act_share" />
+
+            <TextView
+                style="@style/GiftGram.SheetRowSub"
+                android:text="@string/act_share_sub" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_theme"
+        style="@style/GiftGram.SheetRow">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/act_theme"
+            android:src="@drawable/ic_gg_theme" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/GiftGram.SheetRowTitle"
+                android:text="@string/act_theme" />
+
+            <TextView
+                android:id="@+id/theme_state"
+                style="@style/GiftGram.SheetRowSub"
+                android:text="@string/act_theme_sub" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_clear"
+        style="@style/GiftGram.SheetRow">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/act_clear"
+            android:src="@drawable/ic_gg_clear" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/GiftGram.SheetRowTitle"
+                android:text="@string/act_clear" />
+
+            <TextView
+                style="@style/GiftGram.SheetRowSub"
+                android:text="@string/act_clear_sub" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row_about"
+        style="@style/GiftGram.SheetRow">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/act_about"
+            android:src="@drawable/ic_gg_info" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/GiftGram.SheetRowTitle"
+                android:text="@string/act_about" />
+
+            <TextView
+                style="@style/GiftGram.SheetRowSub"
+                android:text="@string/act_about_sub" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gg_line" />
+
+    <LinearLayout
+        android:id="@+id/row_exit"
+        style="@style/GiftGram.SheetRow"
+        android:layout_marginTop="6dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/act_exit"
+            android:src="@drawable/ic_gg_exit" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/GiftGram.SheetRowTitle"
+                android:text="@string/act_exit" />
+
+            <TextView
+                style="@style/GiftGram.SheetRowSub"
+                android:text="@string/act_exit_sub" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

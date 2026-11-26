@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Тёмная тема (по умолчанию для GiftGram) -->
+    <style name="Theme.GiftGram" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/gg_accent</item>
+        <item name="colorPrimaryVariant">@color/gg_accent_dark</item>
+        <item name="colorOnPrimary">@color/gg_white</item>
+        <item name="colorSecondary">@color/gg_cyan</item>
+        <item name="colorSecondaryVariant">@color/gg_cyan</item>
+        <item name="colorOnSecondary">@color/gg_bg</item>
+        <item name="android:colorBackground">@color/gg_bg</item>
+        <item name="colorSurface">@color/gg_surface</item>
+        <item name="colorOnSurface">@color/gg_text</item>
+        <item name="colorOnBackground">@color/gg_text</item>
+        <item name="android:textColorPrimary">@color/gg_text</item>
+        <item name="android:textColorSecondary">@color/gg_muted</item>
+        <item name="android:statusBarColor">@color/gg_bg</item>
+        <item name="android:navigationBarColor">@color/gg_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/gg_bg</item>
+        <item name="bottomSheetDialogTheme">@style/Theme.GiftGram.BottomSheet</item>
+    </style>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Тёмная палитра GiftGram (по умолчанию) -->
+<resources>
+    <color name="gg_bg">#04050A</color>
+    <color name="gg_bg2">#0A0C14</color>
+    <color name="gg_surface">#10131E</color>
+    <color name="gg_line">#1E2231</color>
+
+    <color name="gg_text">#EEF1F9</color>
+    <color name="gg_muted">#8B93A9</color>
+
+    <color name="gg_accent">#7C5CFF</color>
+    <color name="gg_accent_dark">#5B3FE0</color>
+    <color name="gg_cyan">#22D3EE</color>
+    <color name="gg_pink">#FF5CA8</color>
+    <color name="gg_green">#34D399</color>
+
+    <color name="gg_sheet_handle">#2A2F42</color>
+</resources>
