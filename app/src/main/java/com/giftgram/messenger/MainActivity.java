@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         s.setUseWideViewPort(true);
         s.setBuiltInZoomControls(false);
         s.setDisplayZoomControls(false);
-        s.setSupportMultipleWindows(true);
+        s.setSupportMultipleWindows(false);
         s.setJavaScriptCanOpenWindowsAutomatically(true);
         s.setMediaPlaybackRequiresUserGesture(false);
         s.setAllowFileAccess(true);
