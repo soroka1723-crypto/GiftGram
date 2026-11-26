@@ -83,6 +83,42 @@ echo "sdk.dir=/path/to/Android/Sdk" > local.properties
 ./gradlew assembleDebug
 ```
 
+## Тесты
+
+Проект покрыт smoke-тестами на Robolectric (реальный запуск активити на JVM,
+без эмулятора):
+
+```bash
+./gradlew testReleaseUnitTest
+```
+
+Проверяется:
+
+- сплэш стартует и показывает брендинг GiftGram
+- сплэш переходит в `MainActivity`
+- главный экран инфлирует WebView, прогресс, FAB и офлайн-экран
+- шторка меню инфлируется, все 7 пунктов на месте
+- имя приложения — `GiftGram`
+- настройка темы сохраняется и читается
+- deep link `https://t.me/...` корректно принимается
+
+Результат последнего прогона: **7 тестов, 0 падений**.
+
+## Готовый APK
+
+| Параметр | Значение |
+|---|---|
+| Файл | `GiftGram-1.0.0.apk` |
+| Размер | 3.98 МБ |
+| Пакет | `com.giftgram.messenger` |
+| Версия | 1.0.0 (versionCode 1) |
+| minSdk / targetSdk | 26 / 35 |
+| Подпись | v2, RSA 4096, `CN=GiftGram` |
+| SHA-256 APK | `D201DAB5798C2AA4068C5FBEC8A3931E349F77EED9C2865348AF28F11ED7D74C` |
+| SHA-256 сертификата | `7d71b8bde1bfbdba57a0472f7e6bd942eacece6c926d3dc4570c8942c42f4d57` |
+
+APK прикреплён к релизу в разделе **Releases** этого репозитория.
+
 ## Подпись
 
 Приватная сборка подписывается ключом `keystore/giftgram.jks`
